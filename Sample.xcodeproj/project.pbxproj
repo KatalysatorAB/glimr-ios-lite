@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C85506424FE5E4D00EA84B0 /* GLGeoRealtime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C06378B24FE559B007F7AD3 /* GLGeoRealtime.xcframework */; };
-		2C85506524FE5E4D00EA84B0 /* GLGeoRealtime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2C06378B24FE559B007F7AD3 /* GLGeoRealtime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		3219F4EB2518B1C200CD7D04 /* GLGeoRealtime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3219F4EA2518B1C200CD7D04 /* GLGeoRealtime.framework */; };
 		3232B4D618246C47009E75E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232B4D518246C47009E75E7 /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3232B4D818246C47009E75E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232B4D718246C47009E75E7 /* CoreGraphics.framework */; };
 		3232B4DA18246C47009E75E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3232B4D918246C47009E75E7 /* UIKit.framework */; };
@@ -30,7 +29,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2C85506524FE5E4D00EA84B0 /* GLGeoRealtime.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C06378B24FE559B007F7AD3 /* GLGeoRealtime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GLGeoRealtime.xcframework; sourceTree = "<group>"; };
+		3219F4EA2518B1C200CD7D04 /* GLGeoRealtime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLGeoRealtime.framework; path = ../GLGeoRealtime/Distribution/GLGeoRealtime.framework; sourceTree = "<group>"; };
 		3232B4D218246C47009E75E7 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3232B4D518246C47009E75E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3232B4D718246C47009E75E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,10 +63,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				32E7FCE01BCBEE120024FB94 /* SystemConfiguration.framework in Frameworks */,
-				2C85506424FE5E4D00EA84B0 /* GLGeoRealtime.xcframework in Frameworks */,
 				32E7FCD81BCBED860024FB94 /* CoreTelephony.framework in Frameworks */,
 				328A75601998FDCE00E99A50 /* AdSupport.framework in Frameworks */,
 				3232B50B18246C51009E75E7 /* CoreLocation.framework in Frameworks */,
+				3219F4EB2518B1C200CD7D04 /* GLGeoRealtime.framework in Frameworks */,
 				3232B4D818246C47009E75E7 /* CoreGraphics.framework in Frameworks */,
 				3232B4DA18246C47009E75E7 /* UIKit.framework in Frameworks */,
 				3232B4D618246C47009E75E7 /* Foundation.framework in Frameworks */,
@@ -98,7 +96,7 @@
 		3232B4D418246C47009E75E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C06378B24FE559B007F7AD3 /* GLGeoRealtime.xcframework */,
+				3219F4EA2518B1C200CD7D04 /* GLGeoRealtime.framework */,
 				32E7FCDF1BCBEE120024FB94 /* SystemConfiguration.framework */,
 				32E7FCDD1BCBEDEC0024FB94 /* MobileCoreServices.framework */,
 				32E7FCD71BCBED860024FB94 /* CoreTelephony.framework */,
@@ -366,7 +364,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.1;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.glimr.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -396,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.1;
+				MARKETING_VERSION = 3.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.glimr.sdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

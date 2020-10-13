@@ -11,6 +11,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.	
         .library(	
             name: "GLGeoRealtime",	
+            type: .static,
             targets: ["GLGeoRealtime"])	
     ],	
     dependencies: [	
@@ -19,7 +20,6 @@ let package = Package(
     targets: [	
         .binaryTarget(	
             name: "GLGeoRealtime",	
-            type: .static,
             path: "GLGeoRealtimeStatic.xcframework"	
         )	
     ]	

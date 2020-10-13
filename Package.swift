@@ -19,7 +19,7 @@ let package = Package(
     targets: [	
         .binaryTarget(	
             name: "GLGeoRealtime",	
-            type: .static
+            type: .static,
             path: "GLGeoRealtimeStatic.xcframework"	
         )	
     ]	

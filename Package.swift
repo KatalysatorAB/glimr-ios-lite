@@ -3,22 +3,30 @@ import PackageDescription
 
 let package = Package(	
     name: "GLGeoRealtime",	
+    defaultLocalization: "en",
     platforms: [	
-        .iOS(.v11)	
+        .iOS(.v9)	
     ],	
     products: [	
-        // Products define the executables and libraries a package produces, and make them visible to other packages.	
-        .library(	
-            name: "GLGeoRealtime",	
-            targets: ["GLGeoRealtime"])	
+    	.library(name: "GLGeoRealtime", type: .static, targets: ["GLGeoRealtime"])
     ],	
     dependencies: [	
         // Dependencies declare other packages that this package depends on.	
     ],	
     targets: [	
         .binaryTarget(	
-            name: "GLGeoRealtime",	
-            path: "GLGeoRealtime.xcframework"	
-        )	
+            name: "GLGeoRealtimeLibrary",	
+            path: "GLGeoRealtimeStatic.xcframework"	
+        ),
+    .target(
+      name: "GLGeoRealtime",
+      dependencies: ["GLGeoRealtimeLibrary"],
+      path: "GLGeoRealtime",
+
+      publicHeadersPath: "headers/GLGeoRealtimeLibrary",
+      linkerSettings: [
+        .linkedLibrary("z"),
+      ]
+    ),
     ]	
 ) 

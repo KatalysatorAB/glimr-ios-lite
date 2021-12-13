@@ -1,0 +1,11 @@
+framework module Glimr {
+  umbrella header "Glimr.h"
+
+  export *
+  module * { export * }
+}
+
+module Glimr.Swift {
+    header "Glimr-Swift.h"
+    requires objc
+}
